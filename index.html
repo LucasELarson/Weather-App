@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="app.js"></script>
+</head>
+<body>
+   <div id="container">
+      <div id="header">
+         <div id="title">
+            <h1 id="titletext"></h1>
+         </div>
+         <div id="search">
+            <form action="" id="form" onsubmit="getData(document.getElementById('searchbox').value); return false;">
+               <input type="search" name="searchbox" id="searchbox" placeholder="Enter Location Here...">
+               <input type="submit"  style="display: none" />  
+            </form>
+            
+         </div>
+         <div id="burger">
+            <img src="./assets/burger.png" id="burgericon" onclick="alert('Thanks for using me, unfortunately im just here for looks right now')">
+         </div>
+      </div>
+      <div id="body">
+         <div id="weathercards">
+            <div id="today" class="card">
+               <ul>
+                  <li id="daytoday" class="day"></li>
+                  <li id="hightoday" class="high"></li>
+                  <li id="lowtoday" class="low"></li>
+                  <li id="feelsliketoday" class="feelslike"></li>
+                  <li id="conditiontoday" class="condition"></li>
+               </ul>
+            </div>
+            <div id="card1" class="card">
+               <ul>
+                  <li id="day1" class="day"></li>
+                  <li id="high1" class="high"></li>
+                  <li id="low1" class="low"></li>
+                  <li id="feelslike1" class="feelslike"></li>
+                  <li id="condition1" class="condition"></li>
+               </ul>
+            </div>
+            <div id="card2" class="card">
+               <ul>
+                  <li id="day2" class="day"></li>
+                  <li id="high2" class="high"></li>
+                  <li id="low2" class="low"></li>
+                  <li id="feelslike2" class="feelslike"></li>
+                  <li id="condition2" class="condition"></li>
+               </ul>
+            </div>
+            <div id="card3" class="card">
+               <ul>
+                  <li id="day3" class="day"></li>
+                  <li id="high3" class="high"></li>
+                  <li id="low3" class="low"></li>
+                  <li id="feelslike3" class="feelslike"></li>
+                  <li id="condition3" class="condition"></li>
+               </ul>
+            </div>
+            <div id="card4" class="card">
+               <ul>
+                  <li id="day4" class="day"></li>
+                  <li id="high4" class="high"></li>
+                  <li id="low4" class="low"></li>
+                  <li id="feelslike4" class="feelslike"></li>
+                  <li id="condition4" class="condition"></li>
+               </ul>
+            </div>
+            <div id="card5" class="card">
+               <ul>
+                  <li id="day5" class="day"></li>
+                  <li id="high5" class="high"></li>
+                  <li id="low5" class="low"></li>
+                  <li id="feelslike5" class="feelslike"></li>
+                  <li id="condition5" class="condition"></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="footer"></div>
+   </div>
+</body>
+</html>
+

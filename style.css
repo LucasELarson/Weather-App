@@ -1,0 +1,121 @@
+@font-face {
+   font-family: Varela;
+   src: url(fonts/VarelaRound-Regular.ttf)
+}
+
+h1, li, input{
+   font-family: Varela;
+}
+
+body{
+   margin: 0px;
+   overflow: hidden;
+}
+
+#container {
+   display: grid;
+   height: 100vh;
+   width: 100vw;
+   background-color: rgb(40, 40, 46);
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 8fr 1fr;
+}
+
+#header, #footer{
+   background-color: #51277A;
+}
+
+#header {
+   display: grid;
+   height: 100%;
+   width: 100%;
+   grid-auto-rows: 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+      #title{
+         display: grid;
+         justify-content: center;
+         align-items: center;
+         font-size: .75em;
+      }
+
+      #search{
+         display: grid;
+         align-items: center;
+         justify-items: center;
+      }
+
+            #searchbox{
+               background-color: #CB9BFB;
+               height: 5vh;
+               width: 30vw;
+               border-radius: 10px;
+            }
+      
+      #burger {
+         display: grid;
+         height: 100%;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+      }
+
+            #burgericon {
+               height: fit-content;
+               width: 50px;
+            }
+
+#body {
+   display: grid;
+   height: 100%;
+   width: 100%;
+   background-color: #A550FA;
+}
+
+      #weathercards{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+      }
+
+            .card{
+               display: grid;
+               align-content: center;
+            }
+
+                  ul{
+                     display: grid;
+                     justify-content: space-between;
+                     padding-left: 10px;
+                     padding-right: 10px;
+                  }
+
+                  li{
+                     list-style-type: none;
+                     
+                  }
+
+                  .day{
+                     font-size: 4em;
+                  }
+
+                  .high{
+                     font-size: 2em;
+                  }
+
+                  .low{
+                     font-size: 1.25em;
+                  }
+
+                  .feelslike{
+
+                  }
+
+                  .condition{
+
+                  }
+#footer {
+   display: grid;
+   height: 100%;
+   width: 100%;
+}
